@@ -1,0 +1,61 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<h1>New User</h1>
+
+<form>
+    <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+        <div class="form-text">Write the user's full name.</div>
+    </div>
+
+    <div class="mb-3">
+        <label for="idType" class="form-label">Identification Type</label>
+        <select class="form-select" id="idType" name="idType" required>
+            <option value="" selected>Select identification type</option>
+            <option value="CC">CC</option>
+            <option value="TI">TI</option>
+            <option value="CE">CE</option>
+            <option value="PA">PAS</option>
+        </select>
+        <div class="form-text">Select the identification type.</div>
+    </div>
+
+    <div class="mb-3">
+        <label for="idNumber" class="form-label">Identification Number</label>
+        <input type="text" class="form-control" id="idNumber" name="idNumber" required>
+        <div class="form-text">Write the identification number.</div>
+    </div>
+
+    <div class="mb-3">
+        <label for="email" class="form-label">Email Address</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+        <div class="form-text">Write the user's email address.</div>
+    </div>
+
+    <div class="mb-3">
+        <label for="phone" class="form-label">Phone</label>
+        <input type="tel" class="form-control" id="phone" name="phone">
+        <div class="form-text">Write the user's phone number.</div>
+    </div>
+
+    <div class="mb-3">
+        <label for="username" class="form-label">Username</label>
+        <input type="text" class="form-control" id="username" name="username" required>
+        <div class="form-text">Create a username to access the system.</div>
+    </div>
+
+    <div class="mb-3">
+        <label for="role" class="form-label">Role</label>
+        <select class="form-select" id="role" name="role" required>
+            <option value="" selected>Select a role</option>
+            <option value="Administrator">Administrator</option>
+            <option value="Cashier">Cashier</option>
+        </select>
+        <div class="form-text">Select the user's role in the system.</div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}

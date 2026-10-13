@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h1>List Products</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Product</th>
+            <th scope="col">Category</th>
+            <th scope="col">Price</th>
+            <th scope="col">Stock</th>
+        </tr>
+    </thead>
+
+    <tbody class="table-group-divider">
+        <tr>
+            <th scope="row">1</th>
+            <td>Arroz</td>
+            <td>Alimentos</td>
+            <td>$4,500</td>
+            <td>30</td>
+        </tr>
+
+        <tr>
+            <th scope="row">2</th>
+            <td>Leche</td>
+            <td>Bebidas</td>
+            <td>$3,800</td>
+            <td>20</td>
+        </tr>
+
+        <tr>
+            <th scope="row">3</th>
+            <td>Jabón</td>
+            <td>Aseo</td>
+            <td>$2,500</td>
+            <td>15</td>
+        </tr>
+    </tbody>
+</table>
+
+{% endblock %}

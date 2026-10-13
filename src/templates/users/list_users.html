@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h1>List Users</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Id Type</th>
+            <th scope="col">Id Number</th>
+            <th scope="col">Email</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Username</th>
+            <th scope="col">Role</th>
+        </tr>
+    </thead>
+
+    <tbody class="table-group-divider">
+        <tr>
+            <th scope="row">1</th>
+            <td>Ana Garcia</td>
+            <td>CC</td>
+            <td>10203040</td>
+            <td>ana@example.com</td>
+            <td>3001234567</td>
+            <td>agarcia</td>
+            <td>Administrator</td>
+        </tr>
+
+        <tr>
+            <th scope="row">2</th>
+            <td>Carlos Lopez</td>
+            <td>CC</td>
+            <td>50607080</td>
+            <td>carlos@example.com</td>
+            <td>3101234567</td>
+            <td>clopez</td>
+            <td>Cashier</td>
+        </tr>
+
+        <tr>
+            <th scope="row">3</th>
+            <td>Laura Torres</td>
+            <td>CE</td>
+            <td>1234567</td>
+            <td>laura@example.com</td>
+            <td>3201234567</td>
+            <td>ltorres</td>
+            <td>Cashier</td>
+        </tr>
+    </tbody>
+</table>
+
+{% endblock %}
